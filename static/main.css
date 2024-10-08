@@ -12,4 +12,46 @@ body {
     left: 0;
     width: 280px;
     height: 1024px;
+    text-align: center;
+}
+
+.logo {
+    margin-top: 48px;
+    margin-bottom: 40px;
+}
+
+.menu_item {
+    display: flex;
+    align-items: center;
+    width: 224px;
+    height: 48px;
+    margin: 16px auto 0 auto;
+}
+
+.menu_item_icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+
+.menu_item p {
+    color: rgba(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    opacity: 0.7;
+}
+
+.overview {
+    margin-top: 0;
+    background: rgb(79, 132, 234);
+    width: 100%;
+}
+
+.overview img {
+    margin-left: 28px;
+}
+
+.overview p {
+    opacity: 1;
 }
