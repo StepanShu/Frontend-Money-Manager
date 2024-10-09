@@ -42,6 +42,7 @@ body {
 .menu_item:hover {
     background: rgba(255, 255, 255, 0.08);
     opacity: 0.75;
+    transition: 150ms all;
 }
 
 .menu_item_icon {
@@ -109,19 +110,20 @@ body {
     width: 224px;
     padding: 32px 0 32px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
-    cursor: pointer;
 }
 
 .profile_img {
     border-radius: 50px;
     width: 32px;
     height: 32px;
+    cursor: pointer;
 }
 
 .profile_text {
     text-align: left;
     margin-left: 16px;
     margin-right: 32px;
+    cursor: pointer;
 }
 
 .profile_name {
@@ -130,6 +132,7 @@ body {
     font-weight: 600;
     line-height: 24px;
     margin: 0;
+    cursor: pointer;
 }
 
 .view_profile {
@@ -148,6 +151,7 @@ body {
     justify-content: center;
     border-radius: 30px;
     align-items: center;
+    cursor: pointer;
 }
 
 .profile_more_icon_wrapper:active {
@@ -158,4 +162,5 @@ body {
 .profile_more_icon {
     width: 4px;
     height: 20px;
+    cursor: pointer;
 }
