@@ -402,6 +402,8 @@ input:focus {
     text-align: center;
     outline: none;
     padding: 12px 25px;
+    text-decoration: none;
+    font-weight: 500;
     font-size: 16px;
     border: none;
     color: white;
@@ -435,9 +437,18 @@ input:focus {
     vertical-align: middle; /* Вирівнювання по центру */
 }
 
+.btn-transparent {
+    background-color: transparent;
+    color: #4B5768;
+}
+.btn-transparent:hover {
+    background-color: #d9dee6;
+}
+
 .full_width {
     display: flex;
     flex-direction: column;
+    gap: 7px;
 }
 
 .divider {
@@ -483,6 +494,13 @@ input:focus {
     font-size: 25px;
     font-weight: bold;
     text-align: center;
+    margin: 35px 0 0;
+}
+
+.description {
+    text-align: center;
+    color: #6B7280;
+    margin-bottom: 0;
 }
 
 .text-bold {
