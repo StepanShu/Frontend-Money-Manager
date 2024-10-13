@@ -16,6 +16,10 @@
 
         <form action="">
             <div class="input_group">
+                <label>Name</label>
+                <input type="text" name="name" placeholder="Name Surname">
+            </div>
+            <div class="input_group">
                 <label>Email Address</label>
                 <input type="email" name="email" placeholder="example@gmail.com">
             </div>
@@ -33,16 +37,15 @@
             </div>
 
             <div class="full_width">
-                <div class="checkbox_container">
-                    <input type="checkbox" id="customCheckbox">
-                    <label for="customCheckbox">Keep me signed in</label>
+                <div class="text-with-link text-small">
+                    <p>By continuing, you agree to out <a href="#" class="text-bold">terms of service</a></p>
                 </div>
 
-                <button class="button" type="submit">Login</button>
+                <button class="button" type="submit">Sign up</button>
             </div>
 
             <div class="divider">
-                <span>or sign in with</span>
+                <span>or sign up with</span>
             </div>
 
             <button class="button btn_gray" type="submit">
@@ -51,7 +54,7 @@
             </button>           
             
             <div class="text-with-link">
-                <a href="registration.html">Create an account</a>
+                <p>Already have an account? <a href="login.html" class="text-bold">Sign in here</a></p>
             </div>
         </form>        
     </div>
