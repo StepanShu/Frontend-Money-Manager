@@ -261,3 +261,220 @@ body {
     right: 56px;
     cursor: pointer;
 }
+
+/* форма + инпуты */
+
+.center {
+    width: 45%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 45px 0;
+    width: 45%;
+    gap: 27px;
+}
+
+.input_group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.input_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input_header a {
+    font-size: 12px;
+    color: #4F84EA;
+    text-decoration: none;
+}
+
+label {
+    font-weight: 600;
+}
+
+input {
+    background-color: transparent;
+    border: solid 1px #D0D5DD;
+    padding: 12px 16px;
+    outline: none;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+}
+
+input:focus {
+    border: solid 1px #4B5768; /* Колір кордону при фокусуванні */
+}
+
+
+.password_container {
+    position: relative;
+    width: 100%;
+}
+
+.password_container input {
+    width: 100%;
+    padding-right: 40px; /* Відступ для іконки */
+}
+
+.toggle_password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#eyeIcon {
+    color: #999DA3;
+}
+
+.checkbox_container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.checkbox_container input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    appearance: none;
+    border: 1px solid #4F84EA;
+    position: relative;
+    background-color: #fff;
+    outline: none;
+    padding: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    transition: background-color 0.1s, border-color 0.1s;
+    -webkit-transition: background-color 0.1s, border-color 0.1s;
+    -moz-transition: background-color 0.1s, border-color 0.1s;
+    -ms-transition: background-color 0.1s, border-color 0.1s;
+    -o-transition: background-color 0.1s, border-color 0.1s;
+}
+
+.checkbox_container input[type="checkbox"]:checked {
+    background-color: #4F84EA;
+    border-color: #4F84EA;
+}
+
+.checkbox_container input[type="checkbox"]:checked::after {
+    content: url('../media/icons/Shape.svg');
+    color: white;
+    position: absolute;
+    top: 2px;
+}
+
+.checkbox_container label {
+    user-select: none;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+.button {
+    cursor: pointer;
+    background-color: #4F84EA;
+    text-align: center;
+    outline: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+.button:hover {
+    background-color: #699eff;
+}
+
+.btn_gray {
+    background-color: #E4E7EB;
+    color: #4B5768;
+}
+.btn_gray:hover {
+    background-color: #d3d6db;
+}
+
+.btn-icon {
+    width: 20px; /* Встановіть потрібний розмір */
+    height: 20px; /* Встановіть потрібний розмір */
+    margin-right: 8px; /* Відступ між іконкою та текстом */
+    vertical-align: middle; /* Вирівнювання по центру */
+}
+
+.full_width {
+    display: flex;
+    flex-direction: column;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 12px 0;
+}
+
+.divider::before, 
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+.divider span {
+    color: #999DA3;
+    font-size: 14px;
+}
+
+.text-with-link {
+    font-size: 16px;
+    text-align: center; /* Центруємо текст */
+    margin-top: 20px; /* Відступ зверху */
+}
+
+.text-with-link p {
+    color: #6B7280; /* Колір тексту */
+}
+
+.text-with-link a {
+    color: #4B8CF9; /* Колір посилання */
+    text-decoration: none; /* Без підкреслення */
+}
+
+.text-with-link a:hover {
+    text-decoration: underline; /* Підкреслення при наведенні */
+}
