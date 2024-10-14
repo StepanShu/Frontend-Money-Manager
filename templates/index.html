@@ -10,58 +10,58 @@
     <script src="../static/main.js"></script>
 </head>
 <body>
-    <div class="side_bar">
-        <img class="logo" src="../media/icons/FINEbankIO.svg">
+    <nav>
+        <div class="side_bar">
+            <img class="logo" src="../media/icons/FINEbankIO.svg">
 
-        <div class="menu">
-            <div class="menu_item overview" id="overview" onclick="addActiveClass('overview')">
-                <img class="menu_item_icon overview_icon" src="../media/icons/Overview.svg">
-                <p>Overview</p>
-            </div>
-            <div class="menu_item balances" id="balances" onclick="addActiveClass('balances')">
-                <img class="menu_item_icon balances_icon" src="../media/icons/wallet.svg">
-                <p>Balances</p>
-            </div>
-            <div class="menu_item transactions" id="transactions" onclick="addActiveClass('transactions')">
-                <img class="menu_item_icon transactions_icon" src="../media/icons/Transaction.svg">
-                <p>Transactions</p>
-            </div>
-            <div class="menu_item bills" id="bills" onclick="addActiveClass('bills')">
-                <img class="menu_item_icon bills_icon" src="../media/icons/Bill.svg">
-                <p>Bills</p>
-            </div>
-            <div class="menu_item expenses" id="expenses" onclick="addActiveClass('expenses')">
-                <img class="menu_item_icon expenses_icon" src="../media/icons/Expencces.svg">
-                <p>Expenses</p>
-            </div>
-            <div class="menu_item goals" id="goals" onclick="addActiveClass('goals')">
-                <img class="menu_item_icon goals_icon" src="../media/icons/Goal.svg">
-                <p>Goals</p>
-            </div>
-            <div class="menu_item settings" id="settings" onclick="addActiveClass('settings')">
-                <img class="menu_item_icon settings_icon" src="../media/icons/Settings.svg">
-                <p>Settings</p>
-            </div>
-        </div>
-
-        <div class="account_menu">
-            <div class="menu_item logout">
-                <img class="menu_item_icon logout_icon" src="../media/icons/Logout.svg">
-                <p>Logout</p>
-            </div>
-            <div class="profile">
-                <img class="profile_img" src="../media/img/profile_photo.jpeg">
-                <div class="profile_text">
-                    <p class="profile_name">Tanzir Rahman</p>
-                    <a class="view_profile">View profile</a>
+            <div class="menu">
+                <div class="menu_item overview" id="overview" onclick="addActiveClass('overview')">
+                    <img class="menu_item_icon overview_icon" src="../media/icons/Overview.svg">
+                    <p>Overview</p>
                 </div>
-                <div class="profile_more_icon_wrapper">
-                    <img class="profile_more_icon" src="../media/icons/More.svg">
+                <div class="menu_item balances" id="balances" onclick="addActiveClass('balances')">
+                    <img class="menu_item_icon balances_icon" src="../media/icons/wallet.svg">
+                    <p>Balances</p>
+                </div>
+                <div class="menu_item transactions" id="transactions" onclick="addActiveClass('transactions')">
+                    <img class="menu_item_icon transactions_icon" src="../media/icons/Transaction.svg">
+                    <p>Transactions</p>
+                </div>
+                <div class="menu_item bills" id="bills" onclick="addActiveClass('bills')">
+                    <img class="menu_item_icon bills_icon" src="../media/icons/Bill.svg">
+                    <p>Bills</p>
+                </div>
+                <div class="menu_item expenses" id="expenses" onclick="addActiveClass('expenses')">
+                    <img class="menu_item_icon expenses_icon" src="../media/icons/Expencces.svg">
+                    <p>Expenses</p>
+                </div>
+                <div class="menu_item goals" id="goals" onclick="addActiveClass('goals')">
+                    <img class="menu_item_icon goals_icon" src="../media/icons/Goal.svg">
+                    <p>Goals</p>
+                </div>
+                <div class="menu_item settings" id="settings" onclick="addActiveClass('settings')">
+                    <img class="menu_item_icon settings_icon" src="../media/icons/Settings.svg">
+                    <p>Settings</p>
                 </div>
             </div>
+
+            <div class="account_menu">
+                <div class="menu_item logout">
+                    <img class="menu_item_icon logout_icon" src="../media/icons/Logout.svg">
+                    <p>Logout</p>
+                </div>
+                <div class="profile">
+                    <img class="profile_img" src="../media/img/profile_photo.jpeg">
+                    <div class="profile_text">
+                        <p class="profile_name">Tanzir Rahman</p>
+                        <a class="view_profile">View profile</a>
+                    </div>
+                    <div class="profile_more_icon_wrapper">
+                        <img class="profile_more_icon" src="../media/icons/More.svg">
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="main">
         <div class="header">
             <div class="header_text_block">
                 <p class="hello_phrase">Hello Tanzir</p>
@@ -76,6 +76,9 @@
                 </div>
             </div>
         </div>
-    </div>
+        <!-- <main class="container">
+            <h4>Total Balance</h4>
+        </main> -->
+    </nav>
 </body>
 </html>
