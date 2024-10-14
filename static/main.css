@@ -5,9 +5,9 @@
 }
 
 body {
+    display: flex;
     font-family: Inter;
     margin: 0;
-    display: flex;
     background: rgb(244, 245, 247);
 }
 
@@ -15,13 +15,18 @@ body {
 
 /* общее */
 
+nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+}
+
 .side_bar {
     background: #191919;
-    top: 0;
-    left: 0;
     width: 280px;
     height: 100%;
     text-align: center;
+    padding: 0 25px;
 }
 
 /* лого */
@@ -41,6 +46,11 @@ body {
     margin: 16px auto 0 auto;
     border-radius: 4px;
     cursor: pointer;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
 }
 
 .menu_item:hover {
@@ -54,6 +64,11 @@ body {
     height: 24px;
     margin-right: 12px;
     margin-left: 16px;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
 }
 
 .menu_item p {
@@ -71,8 +86,16 @@ body {
 .active {
     background: rgb(79, 132, 234);
     width: 100%;
-    border-radius: 0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
     transition: 150ms all;
+    -webkit-transition: 150ms all;
+    -moz-transition: 150ms all;
+    -ms-transition: 150ms all;
+    -o-transition: 150ms all;
 }
 
 .active img {
@@ -87,7 +110,7 @@ body {
 /* меню аккаунта */
 
 .account_menu {
-    margin-top: 228px;
+    margin-top: 19vh;
 }
 
 .logout {
@@ -179,8 +202,8 @@ body {
     width: 100%;
     height: 88px;
     border-bottom: 1px solid rgb(232, 232, 232);
-    top: 0;
     align-items: center;
+    justify-content: space-between;
 }
 
 /* текстовый блок */
