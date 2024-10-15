@@ -124,7 +124,7 @@ nav {
     transition: 150ms all;
 }
 
-.logout_icon{
+.logout_icon {
     opacity: 0.7;
     margin-top: 0;
     margin-left: 16px;
@@ -275,8 +275,8 @@ nav {
 }
 
 .search_wrapper {
-   display: flex;
-   align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .search_icon {
@@ -345,7 +345,8 @@ input {
 }
 
 input:focus {
-    border: solid 1px #4B5768; /* Колір кордону при фокусуванні */
+    border: solid 1px #4B5768;
+    /* Колір кордону при фокусуванні */
 }
 
 
@@ -356,7 +357,8 @@ input:focus {
 
 .password_container input {
     width: 100%;
-    padding-right: 40px; /* Відступ для іконки */
+    padding-right: 40px;
+    /* Відступ для іконки */
 }
 
 .toggle_password {
@@ -441,29 +443,62 @@ input:focus {
     -ms-transition: 0.2s;
     -o-transition: 0.2s;
 }
+
 .button:hover {
     background-color: #699eff;
 }
 
-.btn_gray {
+.btn-gray {
     background-color: #E4E7EB;
     color: #4B5768;
 }
-.btn_gray:hover {
+
+.btn-gray:hover {
     background-color: #d3d6db;
 }
 
+.btn-light-gray {
+    background-color: #d2d2d25d;
+}
+
+.btn-light-gray:hover {
+    background-color: #bbbbbb5d;
+    transform: scale(0.93);
+    -webkit-transform: scale(0.93);
+    -moz-transform: scale(0.93);
+    -ms-transform: scale(0.93);
+    -o-transform: scale(0.93);
+}
+
+.btn-with-icon {
+    width: 20px;
+    /* Встановіть потрібний розмір */
+    height: 20px;
+    /* Встановіть потрібний розмір */
+    margin-right: 8px;
+    /* Відступ між іконкою та текстом */
+    vertical-align: middle;
+    /* Вирівнювання по центру */
+}
+
 .btn-icon {
-    width: 20px; /* Встановіть потрібний розмір */
-    height: 20px; /* Встановіть потрібний розмір */
-    margin-right: 8px; /* Відступ між іконкою та текстом */
-    vertical-align: middle; /* Вирівнювання по центру */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gap {
+    display: flex;
+    align-items: center;
+    gap: 9px;
 }
 
 .btn-transparent {
     background-color: transparent;
     color: #4B5768;
 }
+
 .btn-transparent:hover {
     background-color: #d9dee6;
 }
@@ -481,7 +516,7 @@ input:focus {
     margin: 12px 0;
 }
 
-.divider::before, 
+.divider::before,
 .divider::after {
     content: '';
     flex: 1;
@@ -496,21 +531,27 @@ input:focus {
 
 .text-with-link {
     font-size: 16px;
-    text-align: center; /* Центруємо текст */
-    /* margin-top: 20px; */ /* Відступ зверху */
+    text-align: center;
+    /* Центруємо текст */
+    /* margin-top: 20px; */
+    /* Відступ зверху */
 }
 
 .text-with-link p {
-    color: #6B7280; /* Колір тексту */
+    color: #6B7280;
+    /* Колір тексту */
 }
 
 .text-with-link a {
-    color: #4B8CF9; /* Колір посилання */
-    text-decoration: none; /* Без підкреслення */
+    color: #4B8CF9;
+    /* Колір посилання */
+    text-decoration: none;
+    /* Без підкреслення */
 }
 
 .text-with-link a:hover {
-    text-decoration: underline; /* Підкреслення при наведенні */
+    text-decoration: underline;
+    /* Підкреслення при наведенні */
 }
 
 .title {
@@ -705,3 +746,38 @@ h4 {
 .pagination__circles-item:hover {
     background-color: #4F84EA;
 }
+
+/* target info */
+
+.target__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.target__info-main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.target__info-item {
+    display: flex;
+    gap: 4px;
+}
+
+.target__info-item_info h5 {
+    margin: 0;
+    font-size: 14px;
+    color: #878787;
+    font-weight: 400;
+}
+
+.target__info-item_info h3 {
+    margin: 4px 0 0;
+}
+
+.target__info-item img {
+    margin-top: -17px;
+}
+
+/* gauge */
